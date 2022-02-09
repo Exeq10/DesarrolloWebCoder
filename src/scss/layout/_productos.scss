@@ -1,0 +1,63 @@
+@use'../base/variables' as v;
+@use'../base/mixins' as m;
+.line {
+    margin-top: 5rem;
+    border-top: 2px solid black;
+    h2 {
+        font-size: v.$fuente;
+        font-size: 3rem;
+        margin-bottom: 2.5rem;
+        text-transform: uppercase;
+    }
+}
+
+.card-header {
+    img {
+        width: 100%;
+        height: 30rem;
+        transition: 300ms;
+        &:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+}
+
+.card-body {
+    p {
+        font-size: 1.5rem;
+    }
+    .ranking {
+        display: flex;
+        img {
+            width: 2rem;
+        }
+    }
+}
+
+.btn-success {
+    padding: 1.2rem;
+    background-color: v.$verde;
+    transition: 300ms;
+    &:hover {
+        background-color: black;
+    }
+    a {
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.4rem;
+    }
+}
+
+.precios {
+    display: flex;
+    gap: 3rem;
+    .precio-b {
+        text-decoration: line-through;
+    }
+    .precio-a {
+        font-size: 2.3rem;
+        font-family: v.$fuente;
+        color: v.$verde;
+    }
+}

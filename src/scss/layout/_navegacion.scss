@@ -1,0 +1,82 @@
+    @use'../base/variables' as v;
+    @use'../base/mixins' as m;
+    #offcanvasRight {
+        width: 30rem;
+        background-color: white;
+    }
+    
+    .offcanvas-header {
+        background: white
+    }
+    
+    .subtitulo {
+        font-family: v.$fuente;
+        font-size: 2rem;
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .offcanvas-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem;
+        h3 {
+            font-size: 3rem;
+            font-family: v.$fuente
+        }
+        ul {
+            padding: 0;
+            align-items: center;
+        }
+        li {
+            font-size: 2.5rem;
+            display: block;
+            width: 100%;
+            transition: 300ms;
+            &:hover {
+                transform: translateX(-10px);
+                a {
+                    color: black;
+                }
+            }
+        }
+        a {
+            color: v.$verde;
+            margin-bottom: 2rem;
+            font-family: v.$fuenteTexto;
+        }
+    }
+    
+    .secciones {
+        width: 100%;
+        display: flex;
+        margin-bottom: 5rem;
+        text-align: start;
+        a {
+            width: 100%;
+            color: black;
+            font-family: v.$fuente;
+            text-transform: uppercase;
+        }
+    }
+    
+    .cat-img {
+        width: 100%;
+    }
+    
+    .cat-link {
+        display: flex;
+        gap: 2.3rem;
+        &:hover {
+            img {
+                transition: all 300ms;
+                transform: scale(1.2);
+            }
+        }
+        img {
+            width: 3rem;
+            height: 3rem;
+        }
+    }

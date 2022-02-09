@@ -1,0 +1,41 @@
+@use'../base/variables' as v;
+@use'../base/mixins' as m;
+.recomendados {
+    margin-top: 5rem;
+    h2 {
+        font-size: v.$fuente;
+        font-size: 3rem;
+        margin-bottom: 2.5rem;
+        text-transform: uppercase;
+    }
+    img {
+        width: 100%;
+        height: 30rem;
+    }
+}
+
+.bg {
+    margin-bottom: 2rem;
+    transition: 300ms;
+    &:hover {
+        .bloque {
+            background-color: v.$verde;
+        }
+        cursor: pointer;
+        filter: opacity(90%);
+    }
+}
+
+.bloque {
+    background-color: rgb(94, 91, 91);
+    padding: 1.2rem;
+    text-align: center;
+    color: white;
+    h3 {
+        font-size: 2.3rem;
+        font-family: v.$fuente;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+}
