@@ -1,0 +1,9 @@
+@use'../base/mixins' as m;
+@use'../base/variables' as v;
+@use'header';
+.marcas {
+    img {
+        width: 15rem;
+    }
+    @extend .header
+}

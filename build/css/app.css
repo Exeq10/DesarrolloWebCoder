@@ -380,7 +380,11 @@ picture {
   height: 1rem;
 }
 
-.header {
+/*Tipografias  */
+/* Fin de tipografia */
+/* paleta de colores */
+/* fin de colores */
+.header, .marcas {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -389,7 +393,7 @@ picture {
   margin-bottom: 4rem;
 }
 @media (min-width: 768px) {
-  .header {
+  .header, .marcas {
     flex-direction: row;
   }
 }
@@ -406,7 +410,7 @@ picture {
 }
 
 .logo {
-  width: 13rem;
+  width: 30rem;
 }
 
 .icons {
@@ -449,82 +453,7 @@ picture {
 }
 
 #offcanvasRight {
-  width: 30rem;
   background-color: white;
-}
-
-.offcanvas-header {
-  background: white;
-}
-
-.subtitulo {
-  font-family: "Bakbak One", cursive;
-  font-size: 2rem;
-  display: flex;
-  gap: 2rem;
-}
-
-.offcanvas-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 1.5rem;
-}
-.offcanvas-body h3 {
-  font-size: 3rem;
-  font-family: "Bakbak One", cursive;
-}
-.offcanvas-body ul {
-  padding: 0;
-  align-items: center;
-}
-.offcanvas-body li {
-  font-size: 2.5rem;
-  display: block;
-  width: 100%;
-  transition: 300ms;
-}
-.offcanvas-body li:hover {
-  transform: translateX(-10px);
-}
-.offcanvas-body li:hover a {
-  color: black;
-}
-.offcanvas-body a {
-  color: #728238;
-  margin-bottom: 2rem;
-  font-family: "Sawarabi Gothic", sans-serif;
-}
-
-.secciones {
-  width: 100%;
-  display: flex;
-  margin-bottom: 5rem;
-  text-align: start;
-}
-.secciones a {
-  width: 100%;
-  color: black;
-  font-family: "Bakbak One", cursive;
-  text-transform: uppercase;
-}
-
-.cat-img {
-  width: 100%;
-}
-
-.cat-link {
-  display: flex;
-  gap: 2.3rem;
-}
-.cat-link:hover img {
-  transition: all 300ms;
-  transform: scale(1.2);
-}
-.cat-link img {
-  width: 3rem;
-  height: 3rem;
 }
 
 .line {
@@ -623,6 +552,10 @@ picture {
 }
 .bloque p {
   font-size: 1.5rem;
+}
+
+.marcas img {
+  width: 15rem;
 }
 
 .footer {

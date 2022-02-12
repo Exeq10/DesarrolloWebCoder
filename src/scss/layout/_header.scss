@@ -1,5 +1,5 @@
-@use'../base/variables' as v;
-@use'../base/mixins' as m;
+@import 'base/variables';
+@import 'base/mixins';
 .header {
     display: flex;
     justify-content: space-between;
@@ -7,22 +7,23 @@
     padding: 1.4rem 2rem 1.4rem 2rem;
     flex-direction: column;
     margin-bottom: 4rem;
-    @include m.tablet {
+    @include tablet {
         flex-direction: row;
     }
 }
 
+$verde: map-get($colores, verde);
 .titulo {
-    font-family: v.$fuente;
+    font-family: $fuente;
     font-size: 2rem;
-    text-shadow: 0px 2px 2px v.$verde;
-    @include m.tablet {
+    text-shadow: 0px 2px 2px $verde;
+    @include tablet {
         font-size: 4rem;
     }
 }
 
 .logo {
-    width: 13rem;
+    width: 30rem;
 }
 
 .icons {
@@ -33,7 +34,7 @@
     gap: 2rem;
     cursor: pointer;
     h3 {
-        color: v.$verde;
+        color: $verde;
     }
 }
 
