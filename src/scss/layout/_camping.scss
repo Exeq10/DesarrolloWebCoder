@@ -5,7 +5,11 @@
     @extend .bloque;
     background-color: white;
     h2 {
-        font-size: 3.2rem;
+        @include m.tablet {
+            font-size: 3.2rem;
+            margin-top: 6rem;
+        }
+        font-size: 2rem;
         color: v.$verde;
         text-transform: uppercase;
     }

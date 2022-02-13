@@ -1,0 +1,51 @@
+@use'../base/mixins' as m;
+@use'../base/variables' as v;
+.formulario {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid gray;
+    background-color: white;
+    header {
+        background-color: gray;
+        width: 100%;
+        padding: 1.3rem;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: v.$fuenteTexto;
+        color: white;
+        margin-bottom: 4rem;
+        text-transform: uppercase;
+    }
+}
+
+.mb-3 {
+    text-align: center;
+    label {
+        font-size: 1.6rem;
+        align-content: center;
+        text-transform: uppercase;
+        font-family: v.$fuenteTexto;
+    }
+    input {
+        font-size: 1.5rem;
+    }
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p {
+        font-size: 1.3rem;
+        margin-top: 4rem
+    }
+}
+
+.btn-v {
+    @include m.boton ( white, v.$verde, white, black);
+    font-size: 1.5rem;
+}

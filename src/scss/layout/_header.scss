@@ -24,6 +24,11 @@ $verde: map-get($colores, verde);
 
 .logo {
     width: 30rem;
+    transition: all 300ms;
+    &:hover {
+        transform: scale(1.2) translateX(10px);
+        cursor: pointer;
+    }
 }
 
 .icons {

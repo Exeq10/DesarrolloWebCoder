@@ -1,0 +1,806 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+/*Tipografias  */
+/* Fin de tipografia */
+/* paleta de colores */
+/* fin de colores */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1179%26quot%3b)' fill='none'%3e%3cpath d='M162.52 -115.25L335.73 -15.25L335.73 184.75L162.52 284.75L-10.69 184.75L-10.69 -15.25zM335.73 184.75L508.94 284.75L508.94 484.75L335.73 584.75L162.52 484.75L162.52 284.75zM162.52 484.75L335.73 584.75L335.73 784.75L162.52 884.75L-10.69 784.75L-10.69 584.75zM855.36 -115.25L1028.57 -15.25L1028.57 184.75L855.36 284.75L682.15 184.75L682.15 -15.25zM1028.57 184.75L1201.78 284.75L1201.78 484.75L1028.57 584.75L855.36 484.75L855.36 284.75zM855.36 484.75L1028.57 584.75L1028.57 784.75L855.36 884.75L682.15 784.75L682.15 584.75zM1201.78 -115.25L1374.99 -15.25L1374.99 184.75L1201.78 284.75L1028.57 184.75L1028.57 -15.25zM1201.78 484.75L1374.99 584.75L1374.99 784.75L1201.78 884.75L1028.57 784.75L1028.57 584.75zM1548.2 -115.25L1721.41 -15.25L1721.41 184.75L1548.2 284.75L1374.99 184.75L1374.99 -15.25zM1548.2 484.75L1721.41 584.75L1721.41 784.75L1548.2 884.75L1374.99 784.75L1374.99 584.75z' stroke='rgba(128%2c 128%2c 128%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M142.52 -115.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM315.73 -15.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM315.73 184.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM142.52 284.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM-30.69 184.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM-30.69 -15.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM488.94 284.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM488.94 484.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM315.73 584.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM142.52 484.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM315.73 784.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM142.52 884.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM-30.69 784.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM-30.69 584.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM835.36 -115.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1008.57 -15.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1008.57 184.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM835.36 284.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM662.15 184.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM662.15 -15.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1181.78 284.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1181.78 484.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1008.57 584.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM835.36 484.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1008.57 784.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM835.36 884.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM662.15 784.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM662.15 584.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1181.78 -115.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1354.99 -15.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1354.99 184.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1354.99 584.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1354.99 784.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1181.78 884.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1528.2 -115.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1701.41 -15.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1701.41 184.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1528.2 284.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1528.2 484.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1701.41 584.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1701.41 784.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1528.2 884.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0z' fill='rgba(128%2c 128%2c 128%2c 1)'%3e%3c/path%3e%3cpath d='M180.16 -18.49L240.78 16.51L240.78 86.51L180.16 121.51L119.53 86.51L119.53 16.51zM240.78 296.51L301.4 331.51L301.4 401.51L240.78 436.51L180.16 401.51L180.16 331.51zM240.78 506.51L301.4 541.51L301.4 611.51L240.78 646.51L180.16 611.51L180.16 541.51zM362.03 296.51L422.65 331.51L422.65 401.51L362.03 436.51L301.4 401.51L301.4 331.51zM483.27 86.51L543.9 121.51L543.9 191.51L483.27 226.51L422.65 191.51L422.65 121.51zM483.27 296.51L543.9 331.51L543.9 401.51L483.27 436.51L422.65 401.51L422.65 331.51zM604.52 86.51L665.14 121.51L665.14 191.51L604.52 226.51L543.9 191.51L543.9 121.51zM665.14 -18.49L725.77 16.51L725.77 86.51L665.14 121.51L604.52 86.51L604.52 16.51zM725.77 296.51L786.39 331.51L786.39 401.51L725.77 436.51L665.14 401.51L665.14 331.51zM847.02 296.51L907.64 331.51L907.64 401.51L847.02 436.51L786.39 401.51L786.39 331.51zM847.02 506.51L907.64 541.51L907.64 611.51L847.02 646.51L786.39 611.51L786.39 541.51zM968.26 296.51L1028.89 331.51L1028.89 401.51L968.26 436.51L907.64 401.51L907.64 331.51zM1028.89 191.51L1089.51 226.51L1089.51 296.51L1028.89 331.51L968.26 296.51L968.26 226.51zM1089.51 296.51L1150.13 331.51L1150.13 401.51L1089.51 436.51L1028.89 401.51L1028.89 331.51zM1028.89 401.51L1089.51 436.51L1089.51 506.51L1028.89 541.51L968.26 506.51L968.26 436.51zM1392.63 191.51L1453.25 226.51L1453.25 296.51L1392.63 331.51L1332 296.51L1332 226.51z' stroke='rgba(0%2c 0%2c 0%2c 0)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1179'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+picture {
+  display: block;
+  width: 100%;
+}
+
+.separador {
+  background-color: #728238;
+  margin-top: 4rem;
+  height: 1rem;
+}
+
+/*Tipografias  */
+/* Fin de tipografia */
+/* paleta de colores */
+/* fin de colores */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 2rem 1.4rem 2rem;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+  }
+}
+
+.titulo {
+  font-family: "Bakbak One", cursive;
+  font-size: 2rem;
+  text-shadow: 0px 2px 2px #728238;
+}
+@media (min-width: 768px) {
+  .titulo {
+    font-size: 4rem;
+  }
+}
+
+.logo {
+  width: 30rem;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+}
+.icons h3 {
+  color: #728238;
+}
+
+.ico {
+  width: 3rem;
+}
+
+.fondo {
+  margin-top: 2rem;
+}
+
+.btn {
+  border: none;
+  padding: 0;
+}
+
+.iconos-menu {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  transition: 300ms;
+}
+.iconos-menu:hover {
+  transform: scale(1.5);
+}
+
+.carousel-inner {
+  max-height: 50rem;
+}
+
+#offcanvasRight {
+  background-color: white;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1179%26quot%3b)' fill='none'%3e%3cpath d='M162.52 -115.25L335.73 -15.25L335.73 184.75L162.52 284.75L-10.69 184.75L-10.69 -15.25zM335.73 184.75L508.94 284.75L508.94 484.75L335.73 584.75L162.52 484.75L162.52 284.75zM162.52 484.75L335.73 584.75L335.73 784.75L162.52 884.75L-10.69 784.75L-10.69 584.75zM855.36 -115.25L1028.57 -15.25L1028.57 184.75L855.36 284.75L682.15 184.75L682.15 -15.25zM1028.57 184.75L1201.78 284.75L1201.78 484.75L1028.57 584.75L855.36 484.75L855.36 284.75zM855.36 484.75L1028.57 584.75L1028.57 784.75L855.36 884.75L682.15 784.75L682.15 584.75zM1201.78 -115.25L1374.99 -15.25L1374.99 184.75L1201.78 284.75L1028.57 184.75L1028.57 -15.25zM1201.78 484.75L1374.99 584.75L1374.99 784.75L1201.78 884.75L1028.57 784.75L1028.57 584.75zM1548.2 -115.25L1721.41 -15.25L1721.41 184.75L1548.2 284.75L1374.99 184.75L1374.99 -15.25zM1548.2 484.75L1721.41 584.75L1721.41 784.75L1548.2 884.75L1374.99 784.75L1374.99 584.75z' stroke='rgba(128%2c 128%2c 128%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M142.52 -115.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM315.73 -15.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM315.73 184.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM142.52 284.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM-30.69 184.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM-30.69 -15.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM488.94 284.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM488.94 484.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM315.73 584.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM142.52 484.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM315.73 784.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM142.52 884.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM-30.69 784.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM-30.69 584.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM835.36 -115.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1008.57 -15.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1008.57 184.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM835.36 284.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM662.15 184.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM662.15 -15.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1181.78 284.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1181.78 484.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1008.57 584.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM835.36 484.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1008.57 784.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM835.36 884.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM662.15 784.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM662.15 584.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1181.78 -115.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1354.99 -15.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1354.99 184.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1354.99 584.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1354.99 784.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1181.78 884.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1528.2 -115.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1701.41 -15.25 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1701.41 184.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1528.2 284.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1528.2 484.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1701.41 584.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1701.41 784.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0zM1528.2 884.75 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0z' fill='rgba(128%2c 128%2c 128%2c 1)'%3e%3c/path%3e%3cpath d='M180.16 -18.49L240.78 16.51L240.78 86.51L180.16 121.51L119.53 86.51L119.53 16.51zM240.78 296.51L301.4 331.51L301.4 401.51L240.78 436.51L180.16 401.51L180.16 331.51zM240.78 506.51L301.4 541.51L301.4 611.51L240.78 646.51L180.16 611.51L180.16 541.51zM362.03 296.51L422.65 331.51L422.65 401.51L362.03 436.51L301.4 401.51L301.4 331.51zM483.27 86.51L543.9 121.51L543.9 191.51L483.27 226.51L422.65 191.51L422.65 121.51zM483.27 296.51L543.9 331.51L543.9 401.51L483.27 436.51L422.65 401.51L422.65 331.51zM604.52 86.51L665.14 121.51L665.14 191.51L604.52 226.51L543.9 191.51L543.9 121.51zM665.14 -18.49L725.77 16.51L725.77 86.51L665.14 121.51L604.52 86.51L604.52 16.51zM725.77 296.51L786.39 331.51L786.39 401.51L725.77 436.51L665.14 401.51L665.14 331.51zM847.02 296.51L907.64 331.51L907.64 401.51L847.02 436.51L786.39 401.51L786.39 331.51zM847.02 506.51L907.64 541.51L907.64 611.51L847.02 646.51L786.39 611.51L786.39 541.51zM968.26 296.51L1028.89 331.51L1028.89 401.51L968.26 436.51L907.64 401.51L907.64 331.51zM1028.89 191.51L1089.51 226.51L1089.51 296.51L1028.89 331.51L968.26 296.51L968.26 226.51zM1089.51 296.51L1150.13 331.51L1150.13 401.51L1089.51 436.51L1028.89 401.51L1028.89 331.51zM1028.89 401.51L1089.51 436.51L1089.51 506.51L1028.89 541.51L968.26 506.51L968.26 436.51zM1392.63 191.51L1453.25 226.51L1453.25 296.51L1392.63 331.51L1332 296.51L1332 226.51z' stroke='rgba(0%2c 0%2c 0%2c 0)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1179'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+
+#offcanvasRightLabel {
+  display: flex;
+  align-items: center;
+}
+
+.offcanvas-body {
+  text-align: center;
+  padding: 0;
+}
+.offcanvas-body .subtitulo {
+  margin-top: 8rem;
+  font-size: 3rem;
+  display: block;
+  background-color: #728238;
+  padding: 0.5rem;
+  color: white;
+  -webkit-box-shadow: 0px 4px 12px 0px #333303;
+  -moz-box-shadow: 0px 4px 12px 0px #333303;
+  box-shadow: 0px 4px 12px 0px #333303;
+}
+.offcanvas-body ul {
+  font-size: 2rem;
+}
+.offcanvas-body ul li {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.offcanvas-body ul li a {
+  color: black;
+  font-family: "Sawarabi Gothic", sans-serif;
+  display: block;
+  transition: all 300ms;
+}
+.offcanvas-body ul li a:hover {
+  transform: translateX(-20px) scale(1.5);
+  color: #728238;
+}
+
+.line {
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .line {
+    margin-top: 10rem;
+  }
+}
+.line h2 {
+  font-size: "Bakbak One", cursive;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .line h2 {
+    font-size: 3rem;
+  }
+}
+
+.card {
+  margin-bottom: 2rem;
+}
+
+.card-header img {
+  width: 100%;
+  height: 20rem;
+  margin: 0 auto;
+  transition: 300ms;
+}
+@media (min-width: 768px) {
+  .card-header img {
+    height: 30rem;
+  }
+}
+.card-header img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.card-body p {
+  font-size: 1.5rem;
+}
+.card-body .ranking {
+  display: flex;
+}
+.card-body .ranking img {
+  width: 2rem;
+}
+
+.btn-success {
+  padding: 1.2rem;
+  background-color: #728238;
+  transition: 300ms;
+}
+.btn-success:hover {
+  background-color: black;
+}
+.btn-success a {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.precios {
+  display: flex;
+  gap: 3rem;
+}
+.precios .precio-b {
+  text-decoration: line-through;
+}
+.precios .precio-a {
+  font-size: 2.3rem;
+  font-family: "Bakbak One", cursive;
+  color: #728238;
+}
+
+.recomendados {
+  margin-top: 5rem;
+}
+.recomendados h2 {
+  font-size: "Bakbak One", cursive;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .recomendados h2 {
+    font-size: 3rem;
+  }
+}
+.recomendados img {
+  width: 100%;
+  height: 30rem;
+}
+
+.bg {
+  margin-bottom: 2rem;
+  transition: 300ms;
+}
+.bg:hover {
+  cursor: pointer;
+  filter: opacity(90%);
+}
+.bg:hover .bloque {
+  background-color: #728238;
+}
+
+.bloque {
+  background-color: #5e5b5b;
+  padding: 1.2rem;
+  text-align: center;
+  color: white;
+}
+.bloque h3 {
+  font-size: 1.9rem;
+  font-family: "Bakbak One", cursive;
+}
+@media (min-width: 768px) {
+  .bloque h3 {
+    font-size: 2.3rem;
+  }
+}
+.bloque p {
+  font-size: 1.5rem;
+}
+
+.marcas {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+.marcas img {
+  width: 100%;
+}
+
+.col-sm-6 {
+  width: 6rem;
+}
+@media (min-width: 768px) {
+  .col-sm-6 {
+    width: 15rem;
+  }
+}
+
+.wave {
+  width: 100%;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .title {
+  margin-top: 2rem;
+  border-bottom: 1px solid white;
+}
+@media (min-width: 992px) {
+  .footer .title {
+    width: 100%;
+  }
+}
+.footer .title h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.footer a {
+  font-size: 1.9rem;
+  color: white;
+}
+.footer a:hover {
+  color: black;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+.footer ul li {
+  margin-bottom: 2rem;
+}
+.footer p {
+  font-size: 1.8rem;
+}
+
+.hora {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+.hora img {
+  filter: invert(100%);
+}
+
+.redes {
+  display: flex;
+  gap: 3rem;
+}
+.redes img {
+  width: 3rem;
+  filter: invert(100%);
+}
+
+.sobre_nosotros {
+  margin-bottom: 15rem;
+  padding: 1.3rem;
+}
+.sobre_nosotros h3 {
+  font-size: 3rem;
+  font-family: "Bakbak One", cursive;
+  color: #728238;
+}
+.sobre_nosotros p {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .sobre_nosotros p {
+    font-size: 2.5rem;
+  }
+}
+
+/*Tipografias  */
+/* Fin de tipografia */
+/* paleta de colores */
+/* fin de colores */
+.recomendados {
+  margin-top: 5rem;
+}
+.recomendados h2 {
+  font-size: "Bakbak One", cursive;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .recomendados h2 {
+    font-size: 3rem;
+  }
+}
+.recomendados img {
+  width: 100%;
+  height: 30rem;
+}
+
+.bg {
+  margin-bottom: 2rem;
+  transition: 300ms;
+}
+.bg:hover {
+  cursor: pointer;
+  filter: opacity(90%);
+}
+.bg:hover .bloque, .bg:hover .bloque-n {
+  background-color: #728238;
+}
+
+.bloque, .bloque-n {
+  background-color: #5e5b5b;
+  padding: 1.2rem;
+  text-align: center;
+  color: white;
+}
+.bloque h3, .bloque-n h3 {
+  font-size: 1.9rem;
+  font-family: "Bakbak One", cursive;
+}
+@media (min-width: 768px) {
+  .bloque h3, .bloque-n h3 {
+    font-size: 2.3rem;
+  }
+}
+.bloque p, .bloque-n p {
+  font-size: 1.5rem;
+}
+
+.bloque-n {
+  background-color: white;
+}
+.bloque-n h2 {
+  font-size: 3.2rem;
+  color: #728238;
+  text-transform: uppercase;
+}
+.bloque-n p {
+  color: black;
+  font-size: 1.7rem;
+}
+
+.row {
+  margin: 0 auto;
+}
+
+/* Seccion info */
+/* secciones */
