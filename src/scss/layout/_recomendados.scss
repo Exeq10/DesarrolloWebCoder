@@ -4,7 +4,10 @@
     margin-top: 5rem;
     h2 {
         font-size: v.$fuente;
-        font-size: 3rem;
+        @include m.tablet {
+            font-size: 3rem;
+        }
+        font-size: 2rem;
         margin-bottom: 2.5rem;
         text-transform: uppercase;
     }
@@ -32,7 +35,10 @@
     text-align: center;
     color: white;
     h3 {
-        font-size: 2.3rem;
+        @include m.tablet {
+            font-size: 2.3rem;
+        }
+        font-size: 1.9rem;
         font-family: v.$fuente;
     }
     p {

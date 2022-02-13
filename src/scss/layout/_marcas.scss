@@ -1,9 +1,18 @@
-@use'../base/mixins' as m;
-@use'../base/variables' as v;
-@use'header';
-.marcas {
-    img {
-        width: 15rem;
+    @use'../base/mixins' as m;
+    @use'../base/variables' as v;
+    @use'header';
+    .marcas {
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 100%;
+        }
     }
-    @extend .header
-}
+    
+    .col-sm-6 {
+        @include m.tablet {
+            width: 15rem;
+        }
+        width: 6rem;
+    }

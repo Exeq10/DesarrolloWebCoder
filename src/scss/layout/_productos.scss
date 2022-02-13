@@ -2,19 +2,32 @@
 @use'../base/mixins' as m;
 .line {
     margin-top: 5rem;
-    border-top: 2px solid black;
+    @include m.tablet {
+        margin-top: 10rem;
+    }
     h2 {
         font-size: v.$fuente;
-        font-size: 3rem;
+        font-size: 2rem;
+        @include m.tablet {
+            font-size: 3rem;
+        }
         margin-bottom: 2.5rem;
         text-transform: uppercase;
     }
 }
 
+.card {
+    margin-bottom: 2rem;
+}
+
 .card-header {
     img {
+        @include m.tablet {
+            height: 30rem;
+        }
         width: 100%;
-        height: 30rem;
+        height: 20rem;
+        margin: 0 auto;
         transition: 300ms;
         &:hover {
             transform: scale(1.2);
