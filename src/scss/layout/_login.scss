@@ -1,11 +1,16 @@
 @use'../base/mixins' as m;
 @use'../base/variables' as v;
 .formulario {
-    width: 60%;
+    width: 95%;
+    @include m.tablet {
+        width: 60%;
+    }
+     
     margin: 0 auto;
     padding: 2rem;
     border: 1px solid gray;
     background-color: white;
+    border-radius: 1rem;
     header {
         background-color: gray;
         width: 100%;

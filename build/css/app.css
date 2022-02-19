@@ -402,10 +402,6 @@ iframe {
   }
 }
 
-.envios p {
-  text-decoration: underline;
-}
-
 /*Tipografias  */
 /* Fin de tipografia */
 /* paleta de colores */
@@ -481,6 +477,14 @@ iframe {
 
 .carousel-inner {
   max-height: 50rem;
+}
+.carousel-inner .d-block {
+  height: 25rem;
+}
+@media (min-width: 768px) {
+  .carousel-inner .d-block {
+    height: 30rem;
+  }
 }
 
 #offcanvasRight {
@@ -829,11 +833,17 @@ iframe {
 }
 
 .formulario {
-  width: 60%;
+  width: 95%;
   margin: 0 auto;
   padding: 2rem;
   border: 1px solid gray;
   background-color: white;
+  border-radius: 1rem;
+}
+@media (min-width: 768px) {
+  .formulario {
+    width: 60%;
+  }
 }
 .formulario header {
   background-color: gray;

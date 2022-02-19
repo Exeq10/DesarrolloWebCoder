@@ -68,4 +68,13 @@ $verde: map-get($colores, verde);
 
 .carousel-inner {
     max-height: 50rem;
-}
+
+    .d-block {
+        height: 25rem;
+        @include tablet {
+            height: 30rem;
+            
+         
+    }
+    
+}}
