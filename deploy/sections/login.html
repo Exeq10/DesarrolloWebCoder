@@ -30,13 +30,15 @@
     </div>
 
 
+
+
     <div>
         <div class="icons">
             <div>
                 <img class="iconos-menu" src="../build/img/iconos/agregar-carrito.png" alt="">
                 <h3>Vacio</h3>
             </div>
-            <a href="./login.html">
+            <a href="./sections/login.html">
                 <div>
                     <img class="iconos-menu" src="../build/img/iconos/Gender_Neutral_User_icon-icons.com_55902.svg" alt="">
                     <h3>Login</h3>
@@ -54,7 +56,7 @@
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
-                    <h5 id="offcanvasRightLabel"> <img class="ico" src="build/img/iconos/Survivor.ico" alt=""> Survivor Store</h5>
+                    <h5 id="offcanvasRightLabel"> <img class="ico" src="../build/img/iconos/Survivor.ico" alt=""> Survivor Store</h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -68,7 +70,7 @@
                                 <a href="../index.html">Home</a>
                             </li>
                             <li>
-                                <a href="info.html" class="text-black-50">Info</a>
+                                <a href="info.html">Info</a>
                             </li>
 
 
@@ -126,83 +128,38 @@
 <!-- fin de header -->
 
 
-<section class="bloque-n sobre_nosotros container-fluid">
 
-    <div>
-        <h2>
-            Sobre Nosotros
-        </h2>
+<section class="container">
 
-    </div>
-
-    <div>
-        <p class="wow">Somos una empresa especialmente dedicada a la venta y confeccíon de indumentaria Táctica tanto policial como militar, en los ultimos años hemos incorporado productos para diversos ambitos relacionados a los deportes, camping y caceria. Contamos
-            con un excelente equipo con la experiencia para brindarle lo que usted necesita.
-        </p>
-    </div>
-</section>
-
-<a id="ubicacion"></a>
-<section class="container row">
-
-
-    <div class=" bloque-n col-xl-6 col-lg-6 col-md-12">
-        <h2>Ubicación de nuestro Local</h2>
-        <p>Correo Electronico : Correo@correo.com</p>
-        <p>Teléfono : 0491265621</p>
-        <p>Dirección : Calle 1 nº 2751</p>
-
-    </div>
-
-    <div class="col-xl-6 col-lg-6 col-md-12">
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6557.188775743783!2d-56.087894!3d-34.7406171!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1644769234481!5m2!1ses-419!2suy" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-    </div>
-
-</section>
-
-
-<a id="pagos"></a>
-<section class="container row">
-
-
-    <div class=" bloque-n col-xl-12 col-md-12">
-        <h2>Métodos de pago</h2>
-        <p>Trabajamos con todas las tarjetas</p>
-
-
-    </div>
-
-    <div class="col-xl-12 col-md-12 tarjetas">
-
-        <div> <img src="../build/img/oca.webp" alt="oca"></div>
-        <div> <img src="../build/img/visa.webp" alt="visa"></div>
-        <div> <img src="../build/img/santander.webp" alt="santander"></div>
-        <div> <img src="../build/img/master.webp" alt="master"></div>
-
-
-    </div>
-
-</section>
-<a id="envios"></a>
-<section class="container row">
-
-
-    <div class=" bloque-n col-xl-12 col-md-12  envios">
-        <h2>Envíos y Devoluciones</h2>
-
-        <p>Envíos a todo el País previo pago del producto</p>
-        <p>Contamos con cadeteria dentro de un rango de 60km</p>
-        <p>En caso de fallas en el producto podra ser devuelto en un plazo de 30 dias </p>
-    </div>
+    <form action="" method="get" class="formulario">
+        <header>Login</header>
 
 
 
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Introduce tu email">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Introduce tu contraseña">
+        </div>
 
+
+        <div class="boton">
+
+            <button class="btn-v"> Ingresar</button>
+            <a href="">
+                <p class="text-black-50">Olvidé mi contraseña</p>
+            </a>
+        </div>
+    </form>
 
 
 </section>
+
+
+
 
 
 
@@ -222,17 +179,16 @@
 
         <ul>
             <li>
-                <a href="#ubicacion">Donde encontrarnos</a></li>
+                <a href="./info.html#ubicacion  ">Donde encontrarnos</a></li>
             <li>
-                <a href="#envios">Envios y devoluciones</a>
+                <a href="./info.html#envios">Envios y devoluciones</a>
             </li>
             <li>
-                <a href="#pagos">Métodos de Pago</a>
+                <a href="./info.html#pagos">Métodos de Pago</a>
             </li>
 
         </ul>
     </div>
-
 
     <div class="col-xl-4 col-md-6 col-sm-12">
         <div class="title">
@@ -261,7 +217,6 @@
 
 
 </footer>
-
 
 <body>
 
