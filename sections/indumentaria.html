@@ -1,721 +1,824 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tienda de Indumentaria Tactica y deportes extremos  ">
-    <meta name="keywords" content="Tienda tactica, policial, militar, caza, camping, deportes extremos">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="shortcut icon" href="../build/img/iconos/Survivor.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../build/css/app.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tienda de Indumentaria Tactica y deportes extremos  "
+    />
+    <meta
+      name="keywords"
+      content="Tienda tactica, policial, militar, caza, camping, deportes extremos"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="../build/img/iconos/Survivor.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../build/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <title>Survivor Store|Indumentaria</title>
-</head>
+  </head>
 
-<!-- header -->
-<header class="header container-fluid wow animate__animated animate__fadeIn">
-
+  <!-- header -->
+  <header class="header container-fluid wow animate__animated animate__fadeIn">
     <div class="logo">
-        <a href="../index.html"> <img src="../build/img/Survivor Store .webp" alt="logo"></a>
-
+      <a href="../index.html">
+        <img src="../build/img/Survivor Store .webp" alt="logo"
+      /></a>
     </div>
-
-
-
 
     <div>
-        <div class="icons">
-            <div>
-                <img class="iconos-menu" src="../build/img/iconos/agregar-carrito.png" alt="">
-                <h3>Vacio</h3>
-            </div>
-            <a href="./login.html">
-                <div>
-                    <img class="iconos-menu" src="../build/img/iconos/Gender_Neutral_User_icon-icons.com_55902.svg" alt="">
-                    <h3>Login</h3>
-                </div>
-            </a>
-            <div>
-                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="iconos-menu" src="../build/img/iconos/basic-gunsight_98155.svg" alt=""></button>
-                <h3>Menú</h3>
-            </div>
+      <div class="icons">
+        <div>
+          <img
+            class="iconos-menu"
+            src="../build/img/iconos/agregar-carrito.png"
+            alt=""
+          />
+          <h3>Vacio</h3>
         </div>
+        <a href="./login.html">
+          <div>
+            <img
+              class="iconos-menu"
+              src="../build/img/iconos/Gender_Neutral_User_icon-icons.com_55902.svg"
+              alt=""
+            />
+            <h3>Login</h3>
+          </div>
+        </a>
+        <div>
+          <button
+            class="btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <img
+              class="iconos-menu"
+              src="../build/img/iconos/basic-gunsight_98155.svg"
+              alt=""
+            />
+          </button>
+          <h3>Menú</h3>
+        </div>
+      </div>
 
-        <nav>
+      <nav>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">
+              <img class="ico" src="../build/img/iconos/Survivor.ico" alt="" />
+              Survivor Store
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <!-- secciones -->
+            <div class="secciones">
+              <h2 class="subtitulo">Menú</h2>
 
-
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h5 id="offcanvasRightLabel"> <img class="ico" src="../build/img/iconos/Survivor.ico" alt=""> Survivor Store</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <!-- secciones -->
-                    <div class="secciones">
-
-                        <h2 class="subtitulo">Menú</h2>
-
-                        <ul>
-                            <li>
-                                <a href="../index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="info.html">Info</a>
-                            </li>
-
-
-
-                        </ul>
-                    </div>
-
-
-
-
-                    <div class="categorias">
-                        <!-- categorias Productos -->
-
-                        <ul>
-                            <li>
-                                <div class="cat-link">
-
-                                    <a href="./indumentaria.html" class="text-black-50">Indumentaria</a>
-
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="cat-link">
-
-                                    <a href="./outdoor.html">Outdoor</a>
-
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="cat-link">
-
-                                    <a href="./camping.html">Camping</a>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cat-link">
-
-
-                                    <a href="./caza.html">Caza</a>
-                                </div>
-                            </li>
-
-                        </ul>
-
-
-
-                    </div>
-                </div>
+              <ul>
+                <li>
+                  <a href="../index.html">Home</a>
+                </li>
+                <li>
+                  <a href="info.html">Info</a>
+                </li>
+              </ul>
             </div>
-        </nav>
-    </div>
-</header>
-<!-- fin de header -->
-<section class="container bloque-n">
 
+            <div class="categorias">
+              <!-- categorias Productos -->
+
+              <ul>
+                <li>
+                  <div class="cat-link">
+                    <a href="./indumentaria.html" class="text-black-50"
+                      >Indumentaria</a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="cat-link">
+                    <a href="./outdoor.html">Outdoor</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="cat-link">
+                    <a href="./camping.html">Camping</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="cat-link">
+                    <a href="./caza.html">Caza</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- fin de header -->
+  <section class="container bloque-n">
     <h2>Indumentaria Táctica</h2>
 
-    <p>Las mejores prendas del mercado confeccionadas para tu comodidad y seguridad, diseñadas por expertos en el rubro .</p>
+    <p>
+      Las mejores prendas del mercado confeccionadas para tu comodidad y
+      seguridad, diseñadas por expertos en el rubro .
+    </p>
+  </section>
 
-</section>
-
-<section class="container row">
-
+  <section class="container row">
     <section class="container row">
+      <!-- comienza tarjeta -->
+      <div
+        class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft"
+      >
+        <div class="card">
+          <header class="card-header">
+            <img src="../build/img/camufladaconverde.1.webp" alt="camisa" />
+          </header>
+          <div class="card-body">
+            <p class="text-body">
+              Camisa camuflada en mangas y pecho, exelente calidad, súper cómoda
+            </p>
 
-
-
-
-        <!-- comienza tarjeta -->
-        <div class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft">
-
-
-            <div class="card">
-                <header class="card-header">
-
-                    <img src="../build/img/camufladaconverde.1.webp" alt="camisa">
-
-                </header>
-                <div class="card-body">
-                    <p class="text-body">
-                       Camisa camuflada en mangas y pecho, exelente calidad, súper cómoda
-                    </p>
-
-                    <div class="ranking">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-
-                    </div>
-
-                    <div class="precios">
-                        <p class="precio-b text-black-50">$ 1720</p>
-                        <p class="precio-a">$ 1650</p>
-                    </div>
-
-
-
-                </div>
-
-                <div class="card-footer">
-
-                    <button class="btn-success"><a href="">Comprar</a> </button>
-                </div>
-
+            <div class="ranking">
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
             </div>
 
+            <div class="precios">
+              <p class="precio-b text-black-50">$ 1720</p>
+              <p class="precio-a">$ 1650</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-success"><a href="">Comprar</a></button>
+          </div>
         </div>
-        <!-- finaliza tarjeta -->
-        <!-- comienza tarjeta -->
-        <div class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft">
+      </div>
+      <!-- finaliza tarjeta -->
+      <!-- comienza tarjeta -->
+      <div
+        class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft"
+      >
+        <div class="card">
+          <header class="card-header">
+            <img src="../build/img/negramangacorta1.webp" alt="camisa" />
+          </header>
+          <div class="card-body">
+            <p class="text-body">
+              Camisa táctica negra manga corta, tela ideal para el verano.
+            </p>
 
-
-            <div class="card">
-                <header class="card-header">
-
-                    <img src="../build/img/negramangacorta1.webp" alt="camisa">
-
-                </header>
-                <div class="card-body">
-                    <p class="text-body">
-                        Camisa táctica negra manga corta, tela ideal para el verano.
-                    </p>
-
-                    <div class="ranking">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-
-                    </div>
-
-                    <div class="precios">
-                        <p class="precio-b text-black-50">$ 1630 </p>
-                        <p class="precio-a">$ 1460</p>
-                    </div>
-
-
-
-                </div>
-
-                <div class="card-footer">
-
-                    <button class="btn-success"><a href="">Comprar</a> </button>
-                </div>
-
+            <div class="ranking">
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
             </div>
 
+            <div class="precios">
+              <p class="precio-b text-black-50">$ 1630</p>
+              <p class="precio-a">$ 1460</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-success"><a href="">Comprar</a></button>
+          </div>
         </div>
-        <!-- finaliza tarjeta -->
-        <!-- comienza tarjeta -->
-        <div class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft">
+      </div>
+      <!-- finaliza tarjeta -->
+      <!-- comienza tarjeta -->
+      <div
+        class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft"
+      >
+        <div class="card">
+          <header class="card-header">
+            <img src="../build/img/negraygris1.webp" alt="camisa" />
+          </header>
+          <div class="card-body">
+            <p class="text-body">
+              Camisa combinada con bolsillos en hombros exelente diseño.
+            </p>
 
-
-            <div class="card">
-                <header class="card-header">
-
-                    <img src="../build/img/negraygris1.webp" alt="camisa">
-
-                </header>
-                <div class="card-body">
-                    <p class="text-body">
-                       Camisa combinada con bolsillos en hombros exelente diseño.
-                    </p>
-
-                    <div class="ranking">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-
-                    </div>
-
-                    <div class="precios">
-                        <p class="precio-b text-black-50">$ 1720</p>
-                        <p class="precio-a">$ 1650</p>
-                    </div>
-
-
-
-                </div>
-
-                <div class="card-footer">
-
-                    <button class="btn-success"><a href="">Comprar</a> </button>
-                </div>
-
+            <div class="ranking">
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
             </div>
 
+            <div class="precios">
+              <p class="precio-b text-black-50">$ 1720</p>
+              <p class="precio-a">$ 1650</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-success"><a href="">Comprar</a></button>
+          </div>
         </div>
-        <!-- finaliza tarjeta -->
-        <!-- comienza tarjeta -->
-        <div class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft">
+      </div>
+      <!-- finaliza tarjeta -->
+      <!-- comienza tarjeta -->
+      <div
+        class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft"
+      >
+        <div class="card">
+          <header class="card-header">
+            <img src="../build/img/pantalonesgrisyverde.webp" alt="pantalon" />
+          </header>
+          <div class="card-body">
+            <p class="text-body">
+              Pantalones tácticos comodos ligeros y resistentes
+            </p>
 
-
-            <div class="card">
-                <header class="card-header">
-
-                    <img src="../build/img/pantalonesgrisyverde.webp" alt="pantalon">
-
-                </header>
-                <div class="card-body">
-                    <p class="text-body">
-                        Pantalones tácticos comodos ligeros y resistentes 
-                    </p>
-
-                    <div class="ranking">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-
-                    </div>
-
-                    <div class="precios">
-                        <p class="precio-b text-black-50">$ 1420</p>
-                        <p class="precio-a">$ 1220</p>
-                    </div>
-
-
-
-                </div>
-
-                <div class="card-footer">
-
-                    <button class="btn-success"><a href="">Comprar</a> </button>
-                </div>
-
+            <div class="ranking">
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
             </div>
 
+            <div class="precios">
+              <p class="precio-b text-black-50">$ 1420</p>
+              <p class="precio-a">$ 1220</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-success"><a href="">Comprar</a></button>
+          </div>
         </div>
-        <!-- finaliza tarjeta -->
-        <!-- comienza tarjeta -->
-        <div class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft">
+      </div>
+      <!-- finaliza tarjeta -->
+      <!-- comienza tarjeta -->
+      <div
+        class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft"
+      >
+        <div class="card">
+          <header class="card-header">
+            <img src="../build/img/pantalonnegro.webp" alt="conservadora1" />
+          </header>
+          <div class="card-body">
+            <p class="text-body">
+              Pantalon Táctico con doble costura resistente e impermeable.
+            </p>
 
-
-            <div class="card">
-                <header class="card-header">
-
-                    <img src="../build/img/pantalonnegro.webp" alt="conservadora1">
-
-                </header>
-                <div class="card-body">
-                    <p class="text-body">
-                        Pantalon Táctico con doble costura resistente e impermeable.
-                    </p>
-
-                    <div class="ranking">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-
-                    </div>
-
-                    <div class="precios">
-                        <p class="precio-b text-black-50">$ 1720</p>
-                        <p class="precio-a">$ 1550</p>
-                    </div>
-
-
-
-                </div>
-
-                <div class="card-footer">
-
-                    <button class="btn-success"><a href="">Comprar</a> </button>
-                </div>
-
+            <div class="ranking">
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
             </div>
 
+            <div class="precios">
+              <p class="precio-b text-black-50">$ 1720</p>
+              <p class="precio-a">$ 1550</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-success"><a href="">Comprar</a></button>
+          </div>
         </div>
-        <!-- finaliza tarjeta -->
-        <!-- comienza tarjeta -->
-        <div class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft">
+      </div>
+      <!-- finaliza tarjeta -->
+      <!-- comienza tarjeta -->
+      <div
+        class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft"
+      >
+        <div class="card">
+          <header class="card-header">
+            <img src="../build/img/pixeladamangalarga.webp" alt="pantalon" />
+          </header>
+          <div class="card-body">
+            <p class="text-body">
+              Camisa Táctica pixelada, hecha para soportar el día a día extremo.
+            </p>
 
-
-            <div class="card">
-                <header class="card-header">
-
-                    <img src="../build/img/pixeladamangalarga.webp" alt="pantalon">
-
-                </header>
-                <div class="card-body">
-                    <p class="text-body">
-                        Camisa Táctica pixelada, hecha para soportar el día a día extremo.
-                    </p>
-
-                    <div class="ranking">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-
-                    </div>
-
-                    <div class="precios">
-                        <p class="precio-b text-black-50">$ 1320</p>
-                        <p class="precio-a">$ 1120</p>
-                    </div>
-
-
-
-                </div>
-
-                <div class="card-footer">
-
-                    <button class="btn-success"><a href="">Comprar</a> </button>
-                </div>
-
+            <div class="ranking">
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
             </div>
 
+            <div class="precios">
+              <p class="precio-b text-black-50">$ 1320</p>
+              <p class="precio-a">$ 1120</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-success"><a href="">Comprar</a></button>
+          </div>
         </div>
-        <!-- finaliza tarjeta -->
-        <!-- comienza tarjeta -->
-        <div class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft">
+      </div>
+      <!-- finaliza tarjeta -->
+      <!-- comienza tarjeta -->
+      <div
+        class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft"
+      >
+        <div class="card">
+          <header class="card-header">
+            <img src="../build/img/botaskaki.webp" alt="botas" />
+          </header>
+          <div class="card-body">
+            <p class="text-body">
+              Botas Acero color kaki, con punta de acero y resistentes al agua.
+            </p>
 
-
-            <div class="card">
-                <header class="card-header">
-
-                    <img src="../build/img/botaskaki.webp" alt="botas">
-
-                </header>
-                <div class="card-body">
-                    <p class="text-body">
-                      Botas Acero color kaki, con punta de acero y resistentes al agua.
-                    </p>
-
-                    <div class="ranking">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-
-                    </div>
-
-                    <div class="precios">
-                        <p class="precio-b text-black-50">$ 3200</p>
-                        <p class="precio-a">$ 2400</p>
-                    </div>
-
-
-
-                </div>
-
-                <div class="card-footer">
-
-                    <button class="btn-success"><a href="">Comprar</a> </button>
-                </div>
-
+            <div class="ranking">
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
             </div>
 
+            <div class="precios">
+              <p class="precio-b text-black-50">$ 3200</p>
+              <p class="precio-a">$ 2400</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-success"><a href="">Comprar</a></button>
+          </div>
         </div>
-        <!-- finaliza tarjeta -->
-        <!-- comienza tarjeta -->
-        <div class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft">
+      </div>
+      <!-- finaliza tarjeta -->
+      <!-- comienza tarjeta -->
+      <div
+        class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft"
+      >
+        <div class="card">
+          <header class="card-header">
+            <img src="../build/img/botasswatnegras.webp" alt="botas" />
+          </header>
+          <div class="card-body">
+            <p class="text-body">
+              Bota 5.11 color negra , plantilla ergonómica súper cómodas.
+            </p>
 
-
-            <div class="card">
-                <header class="card-header">
-
-                    <img src="../build/img/botasswatnegras.webp" alt="botas">
-
-                </header>
-                <div class="card-body">
-                    <p class="text-body">
-                      Bota 5.11 color negra , plantilla ergonómica súper cómodas.
-                    </p>
-
-                    <div class="ranking">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-
-                    </div>
-
-                    <div class="precios">
-                        <p class="precio-b text-black-50">$ 3600</p>
-                        <p class="precio-a">$ 2600</p>
-                    </div>
-
-
-
-                </div>
-
-                <div class="card-footer">
-
-                    <button class="btn-success"><a href="">Comprar</a> </button>
-                </div>
-
+            <div class="ranking">
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
             </div>
 
+            <div class="precios">
+              <p class="precio-b text-black-50">$ 3600</p>
+              <p class="precio-a">$ 2600</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-success"><a href="">Comprar</a></button>
+          </div>
         </div>
-        <!-- finaliza tarjeta -->
-        <!-- comienza tarjeta -->
-        <div class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft">
+      </div>
+      <!-- finaliza tarjeta -->
+      <!-- comienza tarjeta -->
+      <div
+        class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft"
+      >
+        <div class="card">
+          <header class="card-header">
+            <img src="../build/img/botasunderarmor.webp" alt="botas" />
+          </header>
+          <div class="card-body">
+            <p class="text-body">
+              Bota táctica policial con suela de goma antideslizante y
+              resistente al agua.
+            </p>
 
-
-            <div class="card">
-                <header class="card-header">
-
-                    <img src="../build/img/botasunderarmor.webp" alt="botas">
-
-                </header>
-                <div class="card-body">
-                    <p class="text-body">
-                        Bota táctica policial con suela de goma antideslizante y resistente al agua.
-                    </p>
-
-                    <div class="ranking">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-
-                    </div>
-
-                    <div class="precios">
-                        <p class="precio-b text-black-50">$ 4200</p>
-                        <p class="precio-a">$ 3500</p>
-                    </div>
-
-
-
-                </div>
-
-                <div class="card-footer">
-
-                    <button class="btn-success"><a href="">Comprar</a> </button>
-                </div>
-
+            <div class="ranking">
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
             </div>
 
+            <div class="precios">
+              <p class="precio-b text-black-50">$ 4200</p>
+              <p class="precio-a">$ 3500</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-success"><a href="">Comprar</a></button>
+          </div>
         </div>
-        <!-- finaliza tarjeta -->
-        <!-- comienza tarjeta -->
-        <div class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft">
+      </div>
+      <!-- finaliza tarjeta -->
+      <!-- comienza tarjeta -->
+      <div
+        class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft"
+      >
+        <div class="card">
+          <header class="card-header">
+            <img src="../build/img/chalecokaki.webp" alt="chalecokaki" />
+          </header>
+          <div class="card-body">
+            <p class="text-body">
+              Chaleco táctico color kaki con accesorios y sitema molle.
+            </p>
 
-
-            <div class="card">
-                <header class="card-header">
-
-                    <img src="../build/img/chalecokaki.webp" alt="chalecokaki">
-
-                </header>
-                <div class="card-body">
-                    <p class="text-body">
-                        Chaleco táctico color kaki  con accesorios y sitema molle.
-                    </p>
-
-                    <div class="ranking">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-
-                    </div>
-
-                    <div class="precios">
-                        <p class="precio-b text-black-50">$ 5020</p>
-                        <p class="precio-a">$ 4500</p>
-                    </div>
-
-
-
-                </div>
-
-                <div class="card-footer">
-
-                    <button class="btn-success"><a href="">Comprar</a> </button>
-                </div>
-
+            <div class="ranking">
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
             </div>
 
+            <div class="precios">
+              <p class="precio-b text-black-50">$ 5020</p>
+              <p class="precio-a">$ 4500</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-success"><a href="">Comprar</a></button>
+          </div>
         </div>
-        <!-- finaliza tarjeta -->
-        <!-- comienza tarjeta -->
-        <div class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft">
+      </div>
+      <!-- finaliza tarjeta -->
+      <!-- comienza tarjeta -->
+      <div
+        class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft"
+      >
+        <div class="card">
+          <header class="card-header">
+            <img src="../build/img/chalecotactico1.webp" alt="chaleco" />
+          </header>
+          <div class="card-body">
+            <p class="text-body">
+              Chaleco táctico 5.11 y correjae incluido, con accesorios, sistema
+              molle.
+            </p>
 
-
-            <div class="card">
-                <header class="card-header">
-
-                    <img src="../build/img/chalecotactico1.webp" alt="chaleco">
-
-                </header>
-                <div class="card-body">
-                    <p class="text-body">
-                      Chaleco táctico 5.11 y correjae incluido, con accesorios, sistema molle.
-                    </p>
-
-                    <div class="ranking">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-
-                    </div>
-
-                    <div class="precios">
-                        <p class="precio-b text-black-50">$ 5320</p>
-                        <p class="precio-a">$ 4700</p>
-                    </div>
-
-
-
-                </div>
-
-                <div class="card-footer">
-
-                    <button class="btn-success"><a href="">Comprar</a> </button>
-                </div>
-
+            <div class="ranking">
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
             </div>
 
+            <div class="precios">
+              <p class="precio-b text-black-50">$ 5320</p>
+              <p class="precio-a">$ 4700</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn-success"><a href="">Comprar</a></button>
+          </div>
         </div>
-        <!-- finaliza tarjeta -->
-        <!-- comienza tarjeta -->
-        <div class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft">
+      </div>
+      <!-- finaliza tarjeta -->
+      <!-- comienza tarjeta -->
+      <div
+        class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft"
+      >
+        <div class="card">
+          <header class="card-header">
+            <img src="../build/img/chalecotactico2.webp" alt="botas" />
+          </header>
+          <div class="card-body">
+            <p class="text-body">
+              chaleco 5.11 con sistema molle y accesorios.
+            </p>
 
-
-            <div class="card">
-                <header class="card-header">
-
-                    <img src="../build/img/chalecotactico2.webp" alt="botas">
-
-                </header>
-                <div class="card-body">
-                    <p class="text-body">
-                       chaleco 5.11 con sistema molle y accesorios. 
-                    </p>
-
-                    <div class="ranking">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-                        <img src="../build/img/iconos/christmas-star_112199.svg" alt="punto">
-
-                    </div>
-
-                    <div class="precios">
-                        <p class="precio-b text-black-50">$ 6450</p>
-                        <p class="precio-a">$ 5430</p>
-                    </div>
-
-
-
-                </div>
-
-                <div class="card-footer">
-
-                    <button class="btn-success"><a href="sections/contacto.html">Comprar</a> </button>
-                </div>
-
+            <div class="ranking">
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
+              <img
+                src="../build/img/iconos/christmas-star_112199.svg"
+                alt="punto"
+              />
             </div>
 
-        </div>
-        <!-- finaliza tarjeta -->
+            <div class="precios">
+              <p class="precio-b text-black-50">$ 6450</p>
+              <p class="precio-a">$ 5430</p>
+            </div>
+          </div>
 
+          <div class="card-footer">
+            <button class="btn-success">
+              <a href="sections/contacto.html">Comprar</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- finaliza tarjeta -->
     </section>
+  </section>
 
-
-
-
-</section>
-
-
-<section class="wave  ">
-
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="gray" fill-opacity="1" d="M0,0L48,37.3C96,75,192,149,288,192C384,235,480,245,576,245.3C672,245,768,235,864,197.3C960,160,1056,96,1152,96C1248,96,1344,160,1392,192L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-</section>
-<footer class="footer row ">
-
+  <section class="wave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="gray"
+        fill-opacity="1"
+        d="M0,0L48,37.3C96,75,192,149,288,192C384,235,480,245,576,245.3C672,245,768,235,864,197.3C960,160,1056,96,1152,96C1248,96,1344,160,1392,192L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
+  </section>
+  <footer class="footer row">
     <div class="col-xl-4 col-md-4 col-sm-12">
-        <div class="title">
+      <div class="title">
+        <h3>Survivor Store</h3>
+      </div>
 
-            <h3>Survivor Store</h3>
-
-        </div>
-
-        <ul>
-            <li>
-                <a href="./info.html#ubicacion">Donde encontrarnos</a></li>
-            <li>
-                <a href="./info.html#envios">Envios y devoluciones</a>
-            </li>
-            <li>
-                <a href="./info.html#pagos">Métodos de Pago</a>
-            </li>
-
-        </ul>
+      <ul>
+        <li>
+          <a href="./info.html#ubicacion">Donde encontrarnos</a>
+        </li>
+        <li>
+          <a href="./info.html#envios">Envios y devoluciones</a>
+        </li>
+        <li>
+          <a href="./info.html#pagos">Métodos de Pago</a>
+        </li>
+      </ul>
     </div>
 
     <div class="col-xl-4 col-md-6 col-sm-12">
-        <div class="title">
+      <div class="title">
+        <h3>Horario de Atención</h3>
+      </div>
+      <div class="hora">
+        <img
+          class="ico"
+          src="../build/img/iconos/clock-with-white-face_icon-icons.com_72804.svg"
+          alt="reloj"
+        />
+        <p>L a V : 09:00 a 12:00 y 14:30 a 19:00</p>
+      </div>
+      <div class="title">
+        <h3>Contáctenos</h3>
+      </div>
 
-            <h3>Horario de Atención</h3>
-        </div>
-        <div class="hora">
-            <img class="ico" src="../build/img/iconos/clock-with-white-face_icon-icons.com_72804.svg" alt="reloj">
-            <p>L a V : 09:00 a 12:00 y 14:30 a 19:00</p>
-
-        </div>
-        <div class="title">
-
-
-            <h3>Contáctenos</h3>
-        </div>
-
-        <div class="redes m-4">
-            <a href=""><img src="../build/img/fb_icon-icons.com_65434.svg" alt="face"></a>
-            <a href=""><img src="../build/img/social_media_instagram_ig_logo_icon_141109.svg" alt="ig"></a>
-            <a href=""><img src="../build/img/whatsapp.png" alt="wpp"></a>
-        </div>
-
+      <div class="redes m-4">
+        <a href=""
+          ><img src="../build/img/fb_icon-icons.com_65434.svg" alt="face"
+        /></a>
+        <a href=""
+          ><img
+            src="../build/img/social_media_instagram_ig_logo_icon_141109.svg"
+            alt="ig"
+        /></a>
+        <a href=""><img src="../build/img/whatsapp.png" alt="wpp" /></a>
+      </div>
     </div>
+  </footer>
 
-
-
-</footer>
-
-
-<body>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="../build/js/wow.min.js"></script>
     <script>
-        new WOW().init();
+      new WOW().init();
     </script>
-</body>
-
+  </body>
 </html>

@@ -402,6 +402,23 @@ iframe {
   }
 }
 
+.top {
+  display: none;
+  width: 100%;
+  padding: 2rem;
+  justify-content: end;
+  position: sticky;
+  top: 40rem;
+}
+@media (min-width: 768px) {
+  .top {
+    display: flex;
+  }
+}
+.top a img {
+  width: 6rem;
+}
+
 /*Tipografias  */
 /* Fin de tipografia */
 /* paleta de colores */
@@ -483,7 +500,7 @@ iframe {
 }
 @media (min-width: 768px) {
   .carousel-inner .d-block {
-    height: 30rem;
+    height: 40rem;
   }
 }
 
@@ -529,6 +546,38 @@ iframe {
   color: #728238;
 }
 
+.buscador {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.buscador form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.buscador form input[type=text] {
+  width: 50%;
+  padding: 1.2rem;
+  font-size: 1.5rem;
+}
+.buscador form input[type=text]:focus {
+  outline-color: #728238;
+  -webkit-box-shadow: inset 1px 0px 10px 0px #728238;
+  -moz-box-shadow: inset 1px 0px 10px 0px #728238;
+  box-shadow: inset 1px 0px 10px 0px #728238;
+}
+.buscador form input[type=submit] {
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  -moz-border-radius: 0px 10px 10px 0px;
+  -webkit-border-radius: 0px 10px 10px 0px;
+  border: 0px solid #000000;
+}
+
 .line {
   margin-top: 5rem;
 }
@@ -551,6 +600,7 @@ iframe {
 
 .card {
   margin-bottom: 2rem;
+  z-index: 1;
 }
 
 .card-header img {

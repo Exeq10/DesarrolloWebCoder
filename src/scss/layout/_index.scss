@@ -1,15 +1,16 @@
-@forward 'header';
-@forward 'navegacion';
-@forward 'productos';
-@forward 'recomendados';
-@forward 'marcas';
-@forward 'footer';
+@forward "header";
+@forward "navegacion";
+@forward "buscador";
+@forward "productos";
+@forward "recomendados";
+@forward "marcas";
+@forward "footer";
 
 /* Seccion info */
 
-@forward 'infoNosotros';
+@forward "infoNosotros";
 
 /* secciones */
 
-@forward 'camping';
-@forward 'login';
+@forward "camping";
+@forward "login";

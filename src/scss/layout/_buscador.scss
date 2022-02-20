@@ -1,0 +1,38 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.buscador {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  form {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    input[type="text"] {
+      width: 50%;
+      padding: 1.2rem;
+      font-size: 1.5rem;
+
+      &:focus {
+        outline-color: v.$verde;
+        -webkit-box-shadow: inset 1px 0px 10px 0px v.$verde;
+        -moz-box-shadow: inset 1px 0px 10px 0px v.$verde;
+        box-shadow: inset 1px 0px 10px 0px v.$verde;
+      }
+    }
+
+    input[type="submit"] {
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 0px 10px 10px 0px;
+      -moz-border-radius: 0px 10px 10px 0px;
+      -webkit-border-radius: 0px 10px 10px 0px;
+      border: 0px solid #000000;
+    }
+  }
+}

@@ -1,61 +1,79 @@
-@use'../base/mixins' as m;
-@use'../base/variables' as v;
+@use "../base/mixins" as m;
+@use "../base/variables" as v;
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .contenedor {
-    width: 95%;
-    max-width: 120rem;
-    margin: 0 auto;
-    padding: 1.5rem;
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1.5rem;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 img,
 picture {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .separador {
-    background-color: v.$verde;
-    margin-top: 4rem;
-    height: 1rem;
+  background-color: v.$verde;
+  margin-top: 4rem;
+  height: 1rem;
 }
 
 iframe {
-    width: 100%;
-    height: 30rem;
+  width: 100%;
+  height: 30rem;
 }
 
 .tarjetas {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content: center;
-    gap: 3rem;
-    align-items: center;
-    img {
-        @include m.tablet {
-            width: 15rem;
-        }
-        width: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  img {
+    @include m.tablet {
+      width: 15rem;
     }
+    width: 10rem;
+  }
 }
 
+.top {
+  display: none;
+  width: 100%;
+  padding: 2rem;
+  justify-content: end;
+  position: sticky;
+  top: 40rem;
+
+  @include m.tablet {
+    display: flex;
+  }
+
+  a {
+    img {
+      width: 6rem;
+    }
+  }
+}
