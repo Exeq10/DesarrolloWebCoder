@@ -17,6 +17,7 @@
     <link rel="shortcut icon" href="build/img/iconos/Survivor.ico" type="image/x-icon">
     <link rel="stylesheet" href="build/css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
 
     <title>Survivor Store | Home</title>
 </head>
@@ -29,15 +30,27 @@
 
     </div>
 
-   
 
+  
 
     <div>
         <div class="icons">
-            <div>
-                <img class="iconos-menu" src="build/img/iconos/agregar-carrito.png" alt="">
-                <h3>Vacio</h3>
+            <div id="cart">
+                <img class="iconos-menu" id="carrito" onclick="CrearCart()" src="build/img/iconos/agregar-carrito.png" alt="">
+                <h3>Carrito</h3>
             </div>
+            <div class="contenedor-cart display">
+                
+                <div class="boton">
+
+                
+                    <button class="btn-success"> Confirmar</button>
+                </div>
+                
+                <div class="cart ">
+                  
+                </div>
+        </div>
             <a href="./sections/login.html">
                 <div>
                     <img class="iconos-menu" src="build/img/iconos/Gender_Neutral_User_icon-icons.com_55902.svg" alt="">
@@ -127,6 +140,9 @@
 <!-- fin de header -->
 
 
+    
+   
+
 
 
 <section class="container">
@@ -170,12 +186,12 @@
 <section class="contenedor line ">
 
     <h2 class=" text-center wow animate__animated animate__fadeIn "> destacados</h2>
-    <div class="productos row">
+    <div id="productos" class="productos row">
         <!-- comienza tarjeta -->
-        <div class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft">
+        <div class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft" >
 
 
-            <div class="card">
+            <div class="card" >
                 <header class="card-header">
 
                     <img src="build/img/pantalonnegro.webp" alt="pantalon">
@@ -206,7 +222,7 @@
 
                 <div class="card-footer">
 
-                    <button class="btn-success"><a href="">Comprar</a> </button>
+                    <button class="btn-success agregar" data-id="1">Comprar </button>
                 </div>
 
             </div>
@@ -214,10 +230,10 @@
         </div>
         <!-- finaliza tarjeta -->
         <!-- comienza tarjeta -->
-        <div class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft animate__delay-1s">
+        <div class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft animate__delay-1s" >
 
 
-            <div class="card">
+            <div class="card" >
                 <header class="card-header">
 
                     <img src="build/img/pixeladamangalarga.webp" alt="camisa">
@@ -246,7 +262,7 @@
 
                 <div class="card-footer">
 
-                    <button class="btn-success"><a href="">Comprar</a> </button>
+                    <button class="btn-success agregar" data-id="2">Comprar </button>
                 </div>
 
             </div>
@@ -257,7 +273,7 @@
         <div class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft animate__delay-2s">
 
 
-            <div class="card">
+            <div class="card" >
                 <header class="card-header">
 
                     <img src="build/img/mochilatacticaverde.webp" alt="pantalon">
@@ -287,7 +303,7 @@
 
                 <div class="card-footer">
 
-                    <button class="btn-success"><a href="">Comprar</a> </button>
+                    <button class="btn-success agregar" data-id="3">Comprar </button>
                 </div>
 
             </div>
@@ -295,10 +311,10 @@
         </div>
         <!-- finaliza tarjeta -->
         <!-- comienza tarjeta -->
-        <div class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft animate__delay-3s">
+        <div class="col-xl-3 col-lg-3 col-md-6 wow animate__animated animate__fadeInLeft animate__delay-3s" >
 
 
-            <div class="card">
+            <div class="card" >
                 <header class="card-header">
 
                     <img src="build/img/verdemilitarmangalarga1.webp" alt="pantalon">
@@ -331,7 +347,7 @@
 
                 <div class="card-footer">
 
-                    <button class="btn-success"><a href="">Comprar</a> </button>
+                    <button class="btn-success agregar" data-id="4">Comprar </button>
                 </div>
 
             </div>
@@ -498,7 +514,10 @@
         new WOW().init();
     </script>
 
-    <script src="build/js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="build/js/Producto.js"></script>
+    <script src="build/js/cart.js"></script>
+
 </body>
 
 </html>
