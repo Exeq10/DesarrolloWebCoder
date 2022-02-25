@@ -787,6 +787,82 @@ iframe {
   filter: invert(100%);
 }
 
+.display {
+  display: none;
+}
+
+#cart {
+  position: relative;
+}
+
+.boton {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.boton button {
+  font-size: 1.5rem;
+}
+
+.contenedor-cart {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10rem;
+  top: 50rem;
+  right: 0rem;
+  top: 15rem;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .contenedor-cart {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+
+.cart {
+  z-index: 2;
+  margin: 0 auto;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .cart {
+    width: 70%;
+  }
+}
+.cart .obj {
+  right: 40rem;
+  border: 1px solid #333;
+  padding: 1.2rem;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  border-radius: 1rem;
+  gap: 1.5rem;
+  align-items: center;
+}
+.cart .obj img {
+  width: 3rem;
+  height: 3rem;
+}
+.cart .obj p {
+  margin-top: 2rem;
+  text-align: center;
+}
+.cart .precio-cart {
+  font-size: 1.6rem;
+  font-family: "Bakbak One", cursive;
+  color: #728238;
+}
+
 .sobre_nosotros {
   margin-bottom: 15rem;
   padding: 1.3rem;
@@ -950,5 +1026,6 @@ iframe {
   transition: 300ms;
 }
 
+/* cart */
 /* Seccion info */
 /* secciones */
